@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -101,6 +101,7 @@ const Testimonials = () => {
                 <div>
                     <Slider {...settings}>
                        {TestimonialData.map((data)=>{
+                        // eslint-disable-next-line react/jsx-key
                         return <div className='my-6'>
                             <div key={data.id} className='flex flex-col gap-4 shadow-lg shadow-[#33CCCC] py-8 px-6 mx-4 rounded-xl bg-gray-950 relative'>
                                 <div className='mb-4'>
